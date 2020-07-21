@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='Implementing the Node Class'/>
+        <page name='Implementing the Linked List Structure'/>
+        <page name='Push - Populating the Linked List'/>
+        <page name='Append - Added a node to the Tail'/>
+        <page name='Insert - Insert a node between nodes'/>
+        <page name='Pop - Remove a node from list'/>
+        <page name='Remove Last - Remove the tail node'/>
+        <page name='Remove After - Remove the node after a specified node'/>
+    </pages>
+</playground>
