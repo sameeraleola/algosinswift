@@ -1,6 +1,6 @@
 # Implementing Trees with Swift
 
 ## 📝 Trees
-## 📝 Binary Trees
+## 📝 Depth First Search
 ## 📝 Binary Search Trees
 
