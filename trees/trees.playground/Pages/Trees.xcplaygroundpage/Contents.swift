@@ -2,22 +2,28 @@ import UIKit
 
 /*
 TREES
- The TREE data structure is made up of nodes arranged in a hierarchy.  The top most node is the root node.
- CHILD nodes are connected to the root node.  Each child node may become the root node for other child nodes attached to it.
  Tree data structures are very efficient structurs.
 
  Configuration
  The nodes within a tree data structure is the root, which is the first/top node in the tree
- The child which is attached to the root.
- The leaf which are the bottom most nodes that do not have any children attached
+ The TREE data structure is made up of nodes arranged in a hierarchy.  The top most node is the root node.
+ CHILD nodes are connected to the root node.  Each child node may become the root node for other child nodes attached to it.
+ The LEAF which are the bottom most nodes that do not have any children attached.
 */
 
 //  ******** TREE DATA STRUCTURE ********
+// The tree class values can be of any generic type.
 class TreeNode<T> {
+    /*
+     The properties of the Tree node class are the value and the children.
+     The value is the value that is stored in the node.
+     The children are the nodes that are attached to the node
+     */
     var value : T
     var children : [TreeNode] = []
     
     // ******** INITIALIZER ********
+    // The initializer passes in the value to the node
     init(_ value : T) {
         self.value = value
     }
@@ -32,11 +38,13 @@ class TreeNode<T> {
 let beverages = TreeNode<String>("Beverages")          // Create the root node
 
 let hot = TreeNode<String>("Hot")                         // Create  a node that will be a child node to the Beverages root
-let cold = TreeNode<String>("cold")                       // Create  a node that will be a child node to the Beverages root
+let cold = TreeNode<String>("Cold")                       // Create  a node that will be a child node to the Beverages root
 
 // Add the child nodes hot and cold to the Beverages root node.
 beverages.add(hot)
 beverages.add(cold)
+
+print(beverages.children)
 
 /*
  Representation of the Beverages tree
