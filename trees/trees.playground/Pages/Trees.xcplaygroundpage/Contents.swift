@@ -34,7 +34,7 @@ class TreeNode<T> {
     }
 }
 
- // ******** IMPLEMENT A TREE ********
+// ******** IMPLEMENT A TREE ********
 let beverages = TreeNode<String>("Beverages")          // Create the root node
 
 let hot = TreeNode<String>("Hot")                         // Create  a node that will be a child node to the Beverages root
