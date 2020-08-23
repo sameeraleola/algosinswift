@@ -5,6 +5,7 @@ import Foundation
 /*
  Breath First Traversal
  --------------------
+ • Breath first traversal may also be referred to as level order traversal.
  • Node traversal order:
  - Start at the root node
     - Go to the child on the left
@@ -30,6 +31,10 @@ class TreeNode<T> {
     func add(_ child : TreeNode) {
         self.children.append(child)
     }
+}
+
+extension TreeNode(_ visit : (TreeNode -> Void)) {
+    
 }
 
 //: [Next](@next)
