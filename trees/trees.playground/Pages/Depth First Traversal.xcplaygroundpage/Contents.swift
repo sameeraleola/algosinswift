@@ -32,7 +32,7 @@ class TreeNode<T> {
     }
 }
 
-
+// ******** IMPLEMENT DFS ********
 /*
  The best approach to traversal is to use recursion
  The reason, because the node *and* the subnodes must be visited.

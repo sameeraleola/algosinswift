@@ -63,6 +63,7 @@ class TreeNode<T> {
     }
 }
 
+// ******** IMPLEMENT BFS ********
 extension TreeNode {
     // We pass in a tree node to the closure
     func forEachLevelOrder(_ visit : (TreeNode) -> Void) {
