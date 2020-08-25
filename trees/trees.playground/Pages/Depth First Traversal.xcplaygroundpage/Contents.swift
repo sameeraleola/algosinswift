@@ -3,7 +3,7 @@
 import Foundation
 
 /*
- Dept First Traversal
+ Dept First Traversal (DFT)
  --------------------
  • Node traversal order:
  - Start at the root node
@@ -15,7 +15,7 @@ import Foundation
  -----
  1.  Declare the Tree class
  2.  Declare the add method to add nodes
- 3.  Create an extension on the TreeNode structure and declare
+ 3.  Create an extension on the TreeNode structure and declare the method that traverses the tree from the top most node to the leaf node.
  */
 
 //  ******** TREE DATA STRUCTURE ********

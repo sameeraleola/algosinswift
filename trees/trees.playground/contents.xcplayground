@@ -3,6 +3,8 @@
     <pages>
         <page name='Breath First Traversal'/>
         <page name='Depth First Traversal'/>
+        <page name='Search'/>
         <page name='Trees'/>
+        <page name='Step by Step'/>
     </pages>
 </playground>

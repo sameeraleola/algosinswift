@@ -43,8 +43,8 @@ let cold = TreeNode<String>("Cold")                       // Create  a node that
 // Add the child nodes hot and cold to the Beverages root node.
 beverages.add(hot)
 beverages.add(cold)
-
-print(beverages.children)
+print(beverages.value)
+print(beverages.children[0])
 
 /*
  Representation of the Beverages tree
