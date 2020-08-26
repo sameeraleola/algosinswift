@@ -16,13 +16,37 @@ class BinaryNode<Element> {
     init(_ value: Element) {
         self.value = value
     }
-    
-    
-    
-    
-    
-    
-}
+  }
+   /* A diagram of the binary tree to create
+       10
+     /    \
+    9      2
+   / \    / \
+   1  3   4  6
+*/
+// 1. Create the nodes that will be stored in the binary tree
+let ten = BinaryNode(10)
+let nine = BinaryNode(9)
+let eight = BinaryNode(8)
+let seven = BinaryNode(7)
+let six = BinaryNode(6)
+let five = BinaryNode(5)
+let four = BinaryNode(4)
+let three = BinaryNode(3)
+let two = BinaryNode(2)
+let one = BinaryNode(1)
+
+// 2.  Now add a child nodes to the root node
+ten.leftChild = nine
+ten.rightChild = two
+// -------
+nine.leftChild = one
+nine.rightChild = three
+// -------
+two.leftChild = four
+two.rightChild = six
+
+
 
 
 
