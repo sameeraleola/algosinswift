@@ -6,7 +6,23 @@ import UIKit
  */
 
 //  ******** BINARY TREE DATA STRUCTURE ********
-
+// Create the binary tree class which can store generic objects.
+// The structure will hold the value that is stored at that node, the left child, and the right child
+class BinaryNode<Element> {
+    var value : Element
+    var leftChild : BinaryNode?
+    var rightChild : BinaryNode?
+    
+    init(_ value: Element) {
+        self.value = value
+    }
+    
+    
+    
+    
+    
+    
+}
 
 
 
