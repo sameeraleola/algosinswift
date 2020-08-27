@@ -52,5 +52,4 @@ two.rightChild = six
 
 
 
-
 // ******** IMPLEMENT A BINARY TREE ********
