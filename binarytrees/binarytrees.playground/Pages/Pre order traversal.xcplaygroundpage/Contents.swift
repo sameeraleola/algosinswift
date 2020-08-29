@@ -32,4 +32,59 @@ class BinaryNode<Element> {
   }
 }
 
+
+/*
+ Pre order traversal of this tree:
+      10
+    /    \
+   9      2
+  / \    / \
+ 1   3  4   6
+ 
+ Result: 10 9 1 3 2 4 6
+ 
+ */
+
+//  ******** POST ORDER TRAVERSAL ********
+extension BinaryNode {
+    func traversePreOrder(visit : (Element) -> Void) {   // Note: The closure is only included to allow printing node.
+        /*
+         Step 1. Visit the current node.
+         Step 2. If the current node has a left child visit that node.
+         Step 3. If the current node has a right child visit that node.
+         Step 4. Repeat at step 1.
+        */
+        visit(value)
+        leftChild?.traversePreOrder(visit: visit)
+        rightChild?.traversePreOrder(visit: visit)
+    }
+}
+
+//  ******** POPULATE A BINARY TREE ********
+// 1. Create the nodes that will be stored in the binary tree
+let ten = BinaryNode(10)
+let nine = BinaryNode(9)
+let eight = BinaryNode(8)
+let seven = BinaryNode(7)
+let six = BinaryNode(6)
+let five = BinaryNode(5)
+let four = BinaryNode(4)
+let three = BinaryNode(3)
+let two = BinaryNode(2)
+let one = BinaryNode(1)
+
+// 2. Now connect the left and right child nodes, if any.
+ten.leftChild = nine
+ten.rightChild = two
+// -------
+nine.leftChild = one
+nine.rightChild = three
+// -------
+two.leftChild = four
+two.rightChild = six
+
+ten.traversePreOrder {
+    print($0)
+}
+
 //: [Next](@next)

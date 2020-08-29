@@ -51,7 +51,7 @@ class BinaryNode<Element> {
  1
  */
 
-//  ******** INORDER TRAVERSAL ********
+//  ******** POST ORDER TRAVERSAL ********
 extension BinaryNode {
     func traversePostOrder(visit : (Element) -> Void) {   // Note: The closure is only included to allow printing node.
         /*
