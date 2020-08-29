@@ -1,5 +1,3 @@
-//: [Previous](@previous)
-
 import Foundation
 
 /*
@@ -92,5 +90,3 @@ two.rightChild = six
 ten.traverseInOrder {
     print($0)
 }
-
-//: [Next](@next)

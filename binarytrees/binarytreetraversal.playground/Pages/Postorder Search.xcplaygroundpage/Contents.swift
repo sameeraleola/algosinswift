@@ -9,16 +9,16 @@ import Foundation
      • Postorder : Begins on the left on all the leaf nodes on same level then to parent : Left -> Root -> Right
      • Preorder : Begins at the root and visits each node in order: Root -> Left -> Right
  
- ******** BINARY TREE IN ORDER TRAVERSAL ********
- In order traversal of a binary tree is a depth first traversal.
+******** BINARY TREE POST ORDER TRAVERSAL ********
+ Post order traversal of a binary tree is a depth first traversal.
  Example binary tree used in this explaination:
-                     1
+                     7
                   /    \
-                 2      3
-                / \
-               4   5
+                 1       9
+                / \    /
+               0   5  8
  
- Inorder result: (Left -> Root -> Right) = 4 -> 2 -> 5 -> Root -> 1
+ Postorder result: (Root -> Left -> Right) = 0 -> 5 -> 1 -> 8 -> 9 -> 7
  */
 
 //  ******** BINARY TREE DATA STRUCTURE ********
@@ -53,12 +53,12 @@ class BinaryNode<Element> {
 extension BinaryNode {
     func traverseInOrder(visit : (Element) -> Void) {   // Note: The closure is only included to allow printing node.
         /*
-         Step 1. If the node we are on has a left child node we push it onto the stack.
-         Step 2. Get the child node
+         Step 1. If the node we are on has a left child node the recurrsive call pushes it onto the stack and
+         Step 2. reads the child node
          Step 3. If the node we are on is a leaf node print it.
          Step 4. If the stack is not empty pop the stack.
-         Step 5. If the node we are on has a right node push it onto the stack.
-         Step 6. Repeat at step 1
+         Step 5. If the node we are on has a right child node the recurrsive call pushes it onto the stack and
+         Step 6. Repeat at step 1.
         */
         leftChild?.traverseInOrder(visit: visit) // Step 1: This will be called again and again pushing values onto the stack until we reach the leaf node.
         visit(value) // Print the left parent node

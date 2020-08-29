@@ -3,5 +3,7 @@
     <pages>
         <page name='In order traversal'/>
         <page name='binarytree'/>
+        <page name='Post order traversal'/>
+        <page name='Pre order traversal'/>
     </pages>
 </playground>
