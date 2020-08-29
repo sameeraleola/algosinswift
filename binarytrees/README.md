@@ -1,7 +1,5 @@
 # 🌳 Binary Search Trees
 ## 🔎 Inorder Search
----
-
 ### Algorithm
 #### Step 1. If the node we are on has a left child node we push it onto the stack.
  #### Step 2. Get the child node
@@ -15,3 +13,6 @@
 ######   9      2
 ######   / \    / \
 ###### 1   3  4   6
+###### Result: 1 9 3 10 4 2 6
+
+---
