@@ -18,7 +18,7 @@ import Foundation
                 / \
                4   5
  
- Preorder result: (Root -> Left -> Right) = Root -> 2 -> 4 -> 5 -> 3
+ Preorder result: (Root -> Left -> Right) = 1 -> 2 -> 4 -> 5 -> 3
  */
 
 //  ******** BINARY TREE DATA STRUCTURE ********
@@ -45,7 +45,7 @@ class BinaryNode<Element> {
  
  */
 
-//  ******** POST ORDER TRAVERSAL ********
+//  ******** PRE ORDER TRAVERSAL ********
 extension BinaryNode {
     func traversePreOrder(visit : (Element) -> Void) {   // Note: The closure is only included to allow printing node.
         /*
