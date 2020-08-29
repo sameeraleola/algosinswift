@@ -17,6 +17,8 @@ class BinaryNode<Element> {
         self.value = value
     }
   }
+
+// ******** IMPLEMENT A BINARY TREE ********
    /* A diagram of the binary tree to create
        10
      /    \
@@ -36,7 +38,7 @@ let three = BinaryNode(3)
 let two = BinaryNode(2)
 let one = BinaryNode(1)
 
-// 2.  Now add a child nodes to the root node
+// 2.  Now add child nodes.
 ten.leftChild = nine
 ten.rightChild = two
 // -------
@@ -52,4 +54,4 @@ two.rightChild = six
 
 
 
-// ******** IMPLEMENT A BINARY TREE ********
+
