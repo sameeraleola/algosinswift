@@ -40,11 +40,12 @@ let one = BinaryNode(1)
 
 // 2.  Now add child nodes.
 ten.leftChild = nine
-ten.rightChild = two
+
 // -------
 nine.leftChild = one
 nine.rightChild = three
 // -------
+ten.rightChild = two
 two.leftChild = four
 two.rightChild = six
 

@@ -23,7 +23,7 @@ Description
  */
 
 // Create a Linked Lists (manually)
-// 1.  Create the lined list class.
+// 1.  Create the linked list class.
 class Node<Value> {     // We want to be able to store any data type within our linked list so we will specify a generic data type.
     var value: Value
     var next: Node?     // This is optional because the tail will not contain a pointer to a next node.
