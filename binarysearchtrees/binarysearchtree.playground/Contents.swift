@@ -61,3 +61,23 @@ extension BinarySearchTree : CustomStringConvertible {
     }
 }
 
+// Binary Search Tree function to insert a node into the tree
+extension BinarySearchTree {
+    // Since the BinarySearchTree is a struct the insert must be mutating
+    mutating func insert(_ value: Element) {
+        root = insert(from: root, value: value)  // insert is a helper function
+    }
+    
+     /*
+     This is a private function that should not be accessable outside of this extension.
+     The node index is passed in as well as the value that is stored in that node.
+     */
+    private func insert(from node: BinaryNode<Element>?, value: Element) -> BinaryNode<Element> {
+        // First check that there is a node being passed in.  If there isn't return the value that was passed in.
+        guard let node = node else {
+            return BinaryNode(value: value)
+        }
+        
+        // If a node is being passed in then we must 
+    }
+}
