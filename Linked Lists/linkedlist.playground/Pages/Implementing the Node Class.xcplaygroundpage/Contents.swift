@@ -46,14 +46,34 @@ extension Node: CustomStringConvertible {
 }
 
 // 3. Create nodes.
+//let node1 = Node(value: 1)
+//let node2 = Node(value: 2)
+//let node3 = Node(value: 3)
+
 let node1 = Node(value: 1)
 let node2 = Node(value: 2)
 let node3 = Node(value: 3)
+let node4 = Node(value: 4)
+let node5 = Node(value: 5)
+let node6 = Node(value: 6)
+let node7 = Node(value: 7)
 
 // 4. Link the nodes into a linked list
-node1.next = node2
-node2.next = node3
+//node1.next = node2
+//node2.next = node3
+//node3.next = nil
+
+node1.next  = node6
+node6.next = node4
+//node6.next = node1
+//node1.next = node4
+//node4.next = node2
+//node2.next = node2
+//node2.next = node3
+//node4.next = nil
 node3.next = nil
+
+
 
 print(node1)
 
